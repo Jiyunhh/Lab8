@@ -55,6 +55,10 @@ public class CustomList extends ArrayAdapter<City> {
     public boolean hasCity(City city) {
         return cities.contains(city);
     }
+    /**
+     * This deletes a city from a list of cities
+     * @param city
+     */
     public void deleteCity(City city) {
         if (cities.contains(city)){
             cities.remove(city);
@@ -62,6 +66,13 @@ public class CustomList extends ArrayAdapter<City> {
         else {
             throw new IllegalArgumentException();
         }
+    }
+    /**
+     * This returns an integer value representing the size of the list of cities
+     * @return
+     */
+    public int countCities() {
+        //return cities.size();
     }
 
 }
