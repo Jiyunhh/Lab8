@@ -43,12 +43,12 @@ public class CustomListTest {
         list.addCity(city);
         Assertions.assertTrue(list.hasCity(city));
     }
-    /*@Test
+    @Test
     void testDeleteCity() {
         list = MockCityList();
         City city = new City("Vancouver", "BC");
         assertThrows(IllegalArgumentException.class, () -> {list.deleteCity(city); });
-    }*/
+    }
 
 
 }
